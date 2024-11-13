@@ -1,7 +1,7 @@
 import React from 'react'
-import NavbarComp from './components/navbarComp.jsx'
-import SidebarComp from './components/SidebarComp.jsx'
-import HomeComp from './components/HomeComp.jsx'
+import NavbarComp from './components/NavbarComp'
+import SidebarComp from './components/SidebarComp'
+import HomeComp from './components/HomeComp'
 
 const App = () => {
   return (
