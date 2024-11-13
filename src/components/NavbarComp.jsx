@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import ava from "../assets/15.png";
+import SearchIcon from '@mui/icons-material/Search';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 
 const NavbarComp = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -19,7 +21,7 @@ const NavbarComp = () => {
     }, []);
 
     return (
-        <nav className=" max-w-[1440px]">
+        <nav className=" max-w-[1440px] flex flex-row items-center">
             <div className="flex flex-row items-center max-w-[270px] px-6 py-3 relative justify-between">
                 <div className="flex flex-row items-center">
                 <img src={ava} alt="" className="rounded-[50%]" />
@@ -90,6 +92,13 @@ const NavbarComp = () => {
                         </ul>
                     </div>
                 )}
+            </div>
+            <div className="flex flex-row w-[1168px] justify-between px-6 py-3 ">
+               <div>
+               <SearchIcon color="primary"/>
+               <input type="text" placeholder=" Quick Search" />
+               </div>
+                <NotificationsIcon color="primary"/>
             </div>
             
         </nav>
