@@ -21,8 +21,8 @@ const NavbarComp = () => {
     }, []);
 
     return (
-        <nav className=" max-w-[1440px] flex flex-row items-center">
-            <div className="flex flex-row items-center max-w-[270px] px-6 py-3 relative justify-between">
+        <nav className=" max-w-[1440px] flex flex-row items-center bg-white rounded-md">
+            <div className="flex flex-row items-center w-[270px] px-6 py-3 relative justify-between">
                 <div className="flex flex-row items-center">
                 <img src={ava} alt="" className="rounded-[50%]" />
                 <p className="ml-4">Jane S.</p>
